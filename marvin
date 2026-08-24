@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Page</title>
+</head>
+<body>
+
+    <!-- INTERNAL LINK: Points to the specific section ID down the page -->
+    <nav>
+        <a href="#course-modules">Jump to Course Modules</a>
+    </nav>
+
+    <h1>Welcome to My Profile</h1>
+    
+    <!-- IMAGES SECTION -->
+    <div>
+        <h2>About Me</h2>
+        <!-- Image 1: Desktop Setup -->
+        <img src="desktop-setup.jpg" alt="A modern developer desktop workspace featuring a wide-screen curved monitor displaying blocks of code, a mechanical keyboard, and a desk plant.">
+        
+        <!-- Image 2: IT Lecturer -->
+        <img src="it-lecturer.jpg" alt="A university lecturer standing in front of an interactive digital presentation screen, explaining software architecture concepts to students in an information technology classroom.">
+    </div>
+
+    <!-- TABLE SECTION: Target of the internal navigation link -->
+    <section id="course-modules">
+        <h2>My Favorite Course Modules</h2>
+        
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Module Name</th>
+                    <th>Why I Like It</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Discrete Mathematics</td>
+                    <td>It sharpens my logical reasoning skills and lays the mathematical groundwork needed to understand complex computer algorithms.</td>
+                </tr>
+                <tr>
+                    <td>Foundations of Information Systems</td>
+                    <td>It provides a fascinating high-level overview of how businesses leverage technology, data, and networks to make critical decisions.</td>
+                </tr>
+                <tr>
+                    <td>Web Application Development</td>
+                    <td>It is incredibly rewarding to build dynamic, interactive web experiences and see my code come to life instantly in the browser.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- EXTERNAL LINK: Correctly attributed external documentation link -->
+    <footer>
+        <p>Explore official technical resources at the <a href="https://mozilla.org" target="_blank">MDN Web Docs</a>.</p>
+    </footer>
+
+</body>
+</html>
