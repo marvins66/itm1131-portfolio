@@ -1,62 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvin's Profile Page</title>
-</head>
-<body>
-<header>
-    <h1>MARVIN JEREMIAH ODAMA</h1>
-</header> 
 
-<main>
-    <!--Internal link-->
-    <nav>
-        <p>Jump directly to: <a href="#favorite-modules">My Favorite Course Modules Table</a></p>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>MARVIN JEREMIAH ODAMA</h1>
+        <button id="menu-btn">☰ Menu</button>
+        <ul id="nav-menu">
+            <li><a href="#favorite-modules">My Favorite Course Modules Table</a></li>
+        </ul>
     </nav>
-    <section>
-        <h2>ABOUT ME</h2>
-        <p>I am by names ODAMA MARVIN JEREMIAH and I am a first year student persuing Bacherlors in Information Systems at MUNI UNIVERSITY located in Arua. I love playing football so much and its my hobby . Besides that am also a fun of computers and that love for them led me to doing this course</p>
-    </section>
-    <section>
-        <h2>MY GOALS</h2>
-        <p>My primary goal this semester is to be able build authentic websites and applications . I also want to be able to toubleshoot different computer problems.</p>
-    </section>
-    <!--Images Section-->
-    <section>
-        <h2>MY IMAGES</h2>
-        <img src="desktop-setup.jpg" alt="Image showing a desktop-setup" width="300">
-        <img src="it-lecturer.jpg" alt="Image showing an IT Lecture" width="300">
-    </section>
+    <main>
+
+        <section class="card" <h2>ABOUT ME</h2>
+            <p>I am by names ODAMA MARVIN JEREMIAH and I am a first year student persuing Bacherlors in Information
+                Systems at MUNI UNIVERSITY located in Arua. I love playing football so much and its my hobby . Besides
+                that am also a fun of computers and that love for them led me to doing this course</p>
+        </section>
+        <section class="card">
+            <h2>MY GOALS</h2>
+            <p>My primary goal this semester is to be able build authentic websites and applications . I also want to be
+                able to toubleshoot different computer problems.</p>
+        </section>
+        <!--Images Section-->
+
+        <section class="card p-4 mb-4">
+            <h2 class="text-primary-custom mb-3">MY IMAGES</h2>
+
+            <!-- Bootstrap Grid Container -->
+            <div class="row g-3">
+                <div class="col-12 col-md-4">
+                    <img src="desktop-setup.jpg" class="img-fluid rounded" alt="Desktop Setup">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="it-lecturer.jpg" class="img-fluid rounded" alt="IT Lecture">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="jerry.jpg" class="img-fluid rounded" alt="Placeholder image">
+                </div>
+            </div>
+        </section>
+
+    </main>
     <!-- Table Section -->
     <section id="favorite-modules">
         <h2>My Favorite Course Modules</h2>
+
         <table>
-            <tr>
+            <!-- Row 1: Headers -->
+            <tr>`
                 <th>Module name</th>
                 <th>Why I like it</th>
             </tr>
+
+            <!-- Row 2: Web Development -->
             <tr>
                 <td>Introduction to Web Development</td>
                 <td>It teaches me how to create my own websites and applications</td>
             </tr>
+
+            <!-- Row 3: Computer Repair -->
             <tr>
                 <td>Computer Repair and Assembly</td>
                 <td>It teaches me how to troubleshoot computer hardware issues</td>
             </tr>
+
+            <!-- Row 4: Foundations of IS -->
             <tr>
-                <td>Foundations of Imformation Systems</td>
-                <td>It teaches me how to turn raw, unorganized facts into useful information inorder to hep people and bussinesses run operations</td>
+                <td>Foundations of Information Systems</td>
+                <td>It teaches me how to turn raw, unorganized facts into useful information inorder to help people
+                    and bussinesses run operations and daily tasks</td>
+            </tr>
         </table>
+
+
+
+    </section>
+    <section id="CONTACT">
+        <form>
+            <fieldset>
+                <legend>CONTACT ME</legend>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+                <p id="char-count">0 characters</p>
+
+                <button type="submit">send</button>
+            </fieldset>
+        </form>
+
     </section>
 
 
 
-</main>
-<footer>
-    <p>Learn more on the <a href="https://www.muni.ac.ug" target="_blank">MUNI UNIVERSITY WEBSITE</a>.</p>
-    <p>&copy;MARVINS@66. All rights reserved</p>
-</footer>
+
+    </main>
+    <footer>
+        <p>Learn more on the <a href="https://www.muni.ac.ug" target="_blank">MUNI UNIVERSITY WEBSITE</a>.</p>
+        <p>&copy;MARVINS@66. All rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
